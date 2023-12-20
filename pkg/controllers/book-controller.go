@@ -11,7 +11,7 @@ import {
 
 var NewBook models.Book
 
-func GetBooks(w http.ResponseWriter, r * http.Request){
+func GetBook(w http.ResponseWriter, r * http.Request){
 	NewBooks := models.GetAllBooks()
 	res, _ := josn.Marshal(NewBooks)
 	w.Header().Set("Content-Type","pkglication/json")

@@ -5,6 +5,8 @@ import {
 	"github.com/atharvaverma12/book/pkg/config"
 }
 
+//use of orm
+
 var db * gorm.db
 
 type Book struct{
